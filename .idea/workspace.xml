@@ -4,34 +4,205 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8008ad1-884f-4801-9258-4b6c8476bbdc" name="Changes" comment="" />
+    <list default="true" id="f8008ad1-884f-4801-9258-4b6c8476bbdc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/config/CORSConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/DoctorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/FileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/dtos/ClientDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/model/FileRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Registration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/ClientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/DoctorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/FileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/RegistrationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/service/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/service/DoctorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/service/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/service/RegistrationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_1__clients_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_2__doctors_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_3__registrations_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_4__addDoctors.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_5__files_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_6__registrations_files_junction.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_7__update_file_table.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_8__registrations_files_junction.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/0ab0c079-ca83-4d47-9c36-239a8f2d781d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/121cbaad-ab88-4a52-b601-c3e5aed5e09f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/64d097f0-48ce-4a4a-8ee9-a2b03149e464.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/73c49e68-5abc-4121-b264-9ce776829972.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/845002ea-c1c3-4eab-9984-eead0d9efb85.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/988633ab-75a6-4a0d-acd7-467db405bd76.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/bd8e20fe-4931-467e-bfa8-0d0ed62199d2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/c46b52a3-7c39-4f57-9ac7-52b61f95ac6c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/ca005400-f213-40e4-961d-5031e4e8040b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/d1bcfd40-6ac3-47ff-82f4-68651bfb771a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/db5e0348-fd8b-4c59-92a2-0c3fd0515b99.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/dc73c154-7c60-47cb-aa39-13feb8b630c9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/ee2916d5-b587-4126-ac6e-276d7df087b1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/f5847832-2efd-4b46-97eb-0a9a4e6fc1ec.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/MbnApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="mbn-service" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Enum" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.6.4/92cf026e6556ae2db07f41f1e0eb4c4542bc34e/spring-data-commons-2.6.4-sources.jar!/org/springframework/data/repository/CrudRepository.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/mbn/MbnApplication.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.yaml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2Cl1LkmS8KS8qyNsn0PKLo2yann" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "WebServerToolWindowFactoryState": "false"
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/albica/Desktop/mbn/mbn-service/src/main/resources/db/migration",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "8e508322d34c40b6cb31d638ce79e082"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
+      <recent name="$PROJECT_DIR$/src/main/java/mbn/repository" />
+      <recent name="$PROJECT_DIR$/src/main/java/mbn/model" />
+      <recent name="$PROJECT_DIR$/src/main/java/mbn" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MbnApplication">
+    <configuration name="MbnApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mbn.MbnApplication" />
+      <module name="mbn-service.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mbn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MbnApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="mbn-service.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="mbn.MbnApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mbn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MbnApplication" />
+        <item itemvalue="Application.MbnApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,8 +211,68 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659362306853</updated>
-      <workItem from="1659362310559" duration="1000" />
+      <workItem from="1659362310559" duration="1433000" />
+      <workItem from="1659786565034" duration="13629000" />
+      <workItem from="1659976719953" duration="1790000" />
+      <workItem from="1660024790713" duration="4000" />
+      <workItem from="1661188612375" duration="2841000" />
+      <workItem from="1661273645229" duration="2947000" />
+      <workItem from="1662399720468" duration="3518000" />
+      <workItem from="1662465745958" duration="591000" />
+      <workItem from="1662473980429" duration="1093000" />
+      <workItem from="1662476681853" duration="579000" />
+      <workItem from="1662538176863" duration="1885000" />
+      <workItem from="1662638867905" duration="589000" />
+      <workItem from="1662714580492" duration="585000" />
+      <workItem from="1663013489201" duration="3233000" />
+      <workItem from="1663099274566" duration="6660000" />
+      <workItem from="1663612428183" duration="3985000" />
+      <workItem from="1663675433486" duration="841000" />
+      <workItem from="1663786453768" duration="2405000" />
+      <workItem from="1663788988923" duration="1428000" />
+      <workItem from="1663874589865" duration="1253000" />
+      <workItem from="1664102691027" duration="2564000" />
+      <workItem from="1664105981022" duration="590000" />
+      <workItem from="1664213280217" duration="8300000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

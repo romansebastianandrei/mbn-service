@@ -1,0 +1,25 @@
+server:
+  port : 8090
+spring:
+  servlet:
+    multipart:
+      max-file-size: 128MB
+      max-request-size: 128MB
+  profiles:
+    active: default
+  jpa:
+    hibernate:
+      ddl-auto: none
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: alina
+    password: alina
+    driverClassName: org.postgresql.Driver
+  flyway:
+    datasource:
+      locations: classpath:/db/migration
+      baseline-on-migrate: false
+      validate-on-migrate: true
+
+ps-ui:
+  url: "http://localhost:3000/"
