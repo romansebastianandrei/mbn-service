@@ -17,7 +17,7 @@ public class FileRequest implements Serializable {
     private UUID fileId;
     private String name;
     private String path;
-    @Column(name="id_registration")
+    @Column(name="registration_id")
     private Long registrationId;
 
     @Column(name="patient_id")

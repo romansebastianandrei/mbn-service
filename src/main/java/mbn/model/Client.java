@@ -2,9 +2,6 @@ package mbn.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.annotations.Type;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -37,7 +34,7 @@ public class Client {
     private List<Registration> registrations;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "clients_files_junction", joinColumns = @JoinColumn(name = "client_id"),
+    @JoinTable(name = "clients_files_junction", joinColumns = @JoinColumn(name = "patient_id"),
             inverseJoinColumns = @JoinColumn(name = "file_id"))
     private Set<FileRequest> fileSet = new HashSet<>();
 

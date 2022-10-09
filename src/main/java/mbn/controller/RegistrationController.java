@@ -3,15 +3,18 @@ package mbn.controller;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import mbn.dtos.ClientDTO;
+import mbn.dtos.FilterDTO;
 import mbn.model.Registration;
 import mbn.service.RegistrationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.text.ParseException;
+import java.util.List;
+
 @RestController
 @RequestMapping(value = "/registration")
 public class RegistrationController {
@@ -36,6 +39,11 @@ public class RegistrationController {
     @GetMapping("/{registrationId}")
     public ResponseEntity<Registration> getRegistration(@PathVariable Long registrationId) throws Exception {
         return ResponseEntity.status(HttpStatus.OK).body(registrationService.getRegistration(registrationId));
+    }
+
+    @PostMapping("/client/{clientId}/search")
+    public  ResponseEntity<List<Registration>> findRegistrations(@PathVariable Long clientId, @RequestBody FilterDTO filterDTO) throws ParseException {
+        return ResponseEntity.ok(registrationService.findRegistrations(filterDTO, clientId));
     }
 
 }

@@ -2,6 +2,7 @@ package mbn.model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import javax.persistence.*;
@@ -16,7 +17,7 @@ public class Registration {
     @Id
     @Basic(optional = false)
     @GeneratedValue(strategy=GenerationType.IDENTITY, generator="IdOrGenerated")
-    @Column(name = "id_registration", unique = true, nullable = false, precision = 20, scale = 0)
+    @Column(name = "registration_id", unique = true, nullable = false, precision = 20, scale = 0)
     private Long idRegistration;
 
     @Column(name="date_of_consultation")
@@ -25,15 +26,15 @@ public class Registration {
     private Date dateOfConsultation;
 
     @ManyToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "registrations_files_junction", joinColumns = @JoinColumn(name = "id_registration"),
+    @JoinTable(name = "registrations_files_junction", joinColumns = @JoinColumn(name = "registration_id"),
             inverseJoinColumns = @JoinColumn(name = "file_id"))
     private Set<FileRequest> fileSet = new HashSet<>();
 
-    @Column(name = "id_recommended_doctor")
-    private Integer recommendedDoctor;
+    @Column(name = "recommended_doctor")
+    private String recommendedDoctor;
 
-    @Column(name = "id_consulted_doctor")
-    private Integer consultedDoctor;
+    @Column(name = "consulted_doctor")
+    private String consultedDoctor;
     @Column(name="diagnostic")
     private String diagnostic;
     @Column(name="investigation")
@@ -42,6 +43,10 @@ public class Registration {
     private String treatment;
     @Column(name="recommendation")
     private String recommendation;
+
+    @Column(name="age_at_consultation")
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    private int ageAtConsultation;
 
     @ManyToOne
     @JoinColumn(name = "cod_patient")
@@ -57,19 +62,19 @@ public class Registration {
         this.idRegistration = idRegistration;
     }
 
-    public Integer getRecommendedDoctor() {
+    public String getRecommendedDoctor() {
         return recommendedDoctor;
     }
 
-    public void setRecommendedDoctor(Integer recommendedDoctor) {
+    public void setRecommendedDoctor(String recommendedDoctor) {
         this.recommendedDoctor = recommendedDoctor;
     }
 
-    public Integer getConsultedDoctor() {
+    public String getConsultedDoctor() {
         return consultedDoctor;
     }
 
-    public void setConsultedDoctor(Integer consultedDoctor) {
+    public void setConsultedDoctor(String consultedDoctor) {
         this.consultedDoctor = consultedDoctor;
     }
 
@@ -127,5 +132,13 @@ public class Registration {
 
     public void setFileSet(Set<FileRequest> fileSet) {
         this.fileSet = fileSet;
+    }
+
+    public int getAgeAtConsultation() {
+        return ageAtConsultation;
+    }
+
+    public void setAgeAtConsultation(int ageAtConsultation) {
+        this.ageAtConsultation = ageAtConsultation;
     }
 }

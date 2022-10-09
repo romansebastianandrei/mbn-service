@@ -5,55 +5,55 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8008ad1-884f-4801-9258-4b6c8476bbdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/config/CORSConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/DoctorController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/FileController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/dtos/ClientDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Doctor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/model/FileRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Registration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/ClientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/DoctorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/FileRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/RegistrationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/service/ClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/service/DoctorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/service/FileService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/service/RegistrationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_1__clients_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_2__doctors_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_3__registrations_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_4__addDoctors.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_5__files_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_6__registrations_files_junction.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_7__update_file_table.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_8__registrations_files_junction.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/0ab0c079-ca83-4d47-9c36-239a8f2d781d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/121cbaad-ab88-4a52-b601-c3e5aed5e09f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/64d097f0-48ce-4a4a-8ee9-a2b03149e464.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/73c49e68-5abc-4121-b264-9ce776829972.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/845002ea-c1c3-4eab-9984-eead0d9efb85.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/988633ab-75a6-4a0d-acd7-467db405bd76.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/bd8e20fe-4931-467e-bfa8-0d0ed62199d2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/c46b52a3-7c39-4f57-9ac7-52b61f95ac6c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/ca005400-f213-40e4-961d-5031e4e8040b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/d1bcfd40-6ac3-47ff-82f4-68651bfb771a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/db5e0348-fd8b-4c59-92a2-0c3fd0515b99.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/dc73c154-7c60-47cb-aa39-13feb8b630c9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/ee2916d5-b587-4126-ac6e-276d7df087b1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/f5847832-2efd-4b46-97eb-0a9a4e6fc1ec.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/util/ApplicationUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/143693fa-6629-4504-8967-8427d74d7dd0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/1b0a32eb-168f-48fe-a4e2-a904ee7f222e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/1e26c778-4ca9-4d2f-b02d-50e1e85c819e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/206d40f2-aa25-42a9-98d0-d97b603a13ab.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/2622204c-6344-4473-b412-4075f0211de4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/3ed74c2f-aa00-4cdc-bc9c-2c4feb1deb3c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/457f0705-3f7c-41ce-9c6a-3f71ca5baa83.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/6e262e60-c771-4019-a283-4b4acac38534.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/7341ba5e-75fb-431d-bf66-22a0bcd59e7e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/89491350-bad2-4903-9895-191382d8934a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/933e570d-3c61-4e16-93e8-031828f30805.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/ad021694-2e4c-4cc0-a1e5-b1d5ffb3ea8a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/b5a0c68d-13d4-41ed-a996-e41f90488065.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/b650a996-3452-4721-b626-faa30a8b51f0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/bd5ef87b-02dd-40be-9413-30ede69992a9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/c074cefe-af79-44a7-9da1-7736976f58fd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/d1865439-4453-45f7-8ad2-db97efdf45dc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/dda3e5ed-81cb-449b-8b21-67d0d60b836a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/df3c4edd-872b-40dc-84d1-7bbb09d5b87a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/f8b39805-1e73-4c52-a57d-74fb9e374e51.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/fa450f81-59b0-40de-b34e-354cbf5b190b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/fc137521-48da-4c2b-9416-b9c9d4582641.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/ff924bd3-c78b-4edf-9b14-998d4e680f9f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/2/48e90819-eb69-46d1-bd05-53d8a1fe446e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/2/7e033fb8-961d-4453-9b62-35381ba958a9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/MbnApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/controller/DoctorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/dtos/ClientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/dtos/FilterDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/model/Doctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/model/FileRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/model/FileRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/model/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Registration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/repository/DoctorRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/repository/RegistrationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/RegistrationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/service/DoctorService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/service/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/service/RegistrationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_2__doctors_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_3__registrations_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_3__registrations_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_4__addDoctors.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_5__files_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_5__files_table.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_6__registrations_files_junction.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_6__registrations_files_junction.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_7__update_file_table.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_8__registrations_files_junction.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_8__clients_files_junction.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,32 +134,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/albica/Desktop/mbn/mbn-service/src/main/resources/db/migration",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "8e508322d34c40b6cb31d638ce79e082"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/albica/Desktop/mbn/mbn-service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;8e508322d34c40b6cb31d638ce79e082&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/db/migration" />
@@ -167,6 +167,9 @@
       <recent name="$PROJECT_DIR$/src/main/java/mbn/model" />
       <recent name="$PROJECT_DIR$/src/main/java/mbn" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mbn.dtos" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MbnApplication">
@@ -234,6 +237,9 @@
       <workItem from="1664102691027" duration="2564000" />
       <workItem from="1664105981022" duration="590000" />
       <workItem from="1664213280217" duration="8300000" />
+      <workItem from="1664446156009" duration="1930000" />
+      <workItem from="1664984901191" duration="2644000" />
+      <workItem from="1665148295019" duration="32634000" />
     </task>
     <servers />
   </component>
@@ -258,19 +264,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="3" />
+          <line>29</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/src/main/java/mbn/service/RegistrationService.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

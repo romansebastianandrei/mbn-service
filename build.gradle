@@ -29,6 +29,7 @@ dependencies {
     implementation group: 'org.springframework', name: 'spring-aspects', version: '3.2.4.RELEASE'
 
     implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-core', version: '9.0.58'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.13.4'
 
 }
 

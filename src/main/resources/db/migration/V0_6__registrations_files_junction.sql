@@ -1,5 +1,5 @@
 
-CREATE TABLE "registrations_files_junction" (
+CREATE TABLE IF NOT EXISTS "registrations_files_junction" (
   "file_id" UUID,
-  "id_registration" INTEGER
+  "registration_id" INTEGER
 );

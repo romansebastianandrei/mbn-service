@@ -1,12 +1,12 @@
 package mbn.controller;
 
-import mbn.dtos.ClientDTO;
+import mbn.dtos.FilterDTO;
 import mbn.model.Client;
 import mbn.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
 
@@ -36,13 +36,17 @@ public class ClientController {
     }
 
     @PostMapping("/search")
-    public List<Client> findEmployeeProjectsExampleMatcher(@RequestBody ClientDTO employeeRequestDTO)
+    public  ResponseEntity<List<Client>> findClients(@RequestBody FilterDTO filterDTO)
     {
-        return clientService.findEmployeeProjectsExampleMatcher(employeeRequestDTO);
+        return ResponseEntity.ok(clientService.findClients(filterDTO));
     }
 
     @PatchMapping("/update/{clientId}")
     public ResponseEntity<Client> updateClient(@PathVariable Long clientId, @RequestBody Client client) {
         return ResponseEntity.ok(clientService.updateClient(clientId, client));
+    }
+    @PostMapping("/update/images/{clientId}")
+    public ResponseEntity<Client> updateClientImages(@PathVariable Long clientId, @RequestParam(value = "files",required = false) MultipartFile[] files) {
+        return ResponseEntity.ok(clientService.updateClientImages(clientId, files));
     }
 }
