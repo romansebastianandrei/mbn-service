@@ -16,14 +16,13 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.persistence.criteria.Predicate;
 import java.io.File;
 import java.io.IOException;
-import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
 
+import static mbn.util.ApplicationUtils.PATH;
 import static mbn.util.ApplicationUtils.isNotNullOrEmpty;
 
 @Service
@@ -32,8 +31,6 @@ public class RegistrationService {
     private RegistrationRepository registrationRepository;
     private ClientRepository clientRepository;
     private FileRepository fileRepository;
-
-    private final static String PATH = "/Users/albica/Desktop/mbn/mbn-service/src/main/resources/static/documents/";
 
     @Autowired
     public RegistrationService(RegistrationRepository registrationRepository, ClientRepository clientRepository,

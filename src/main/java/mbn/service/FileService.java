@@ -13,10 +13,10 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import static mbn.util.ApplicationUtils.PATH;
+
 @Service
 public class FileService {
-
-    private final static String PATH = "/Users/albica/Desktop/mbn/mbn-service/src/main/resources/static/documents/";
 
     private FileRepository fileRepository;
 

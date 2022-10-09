@@ -1,8 +1,6 @@
 package mbn.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import mbn.model.FileRequest;
-import mbn.model.Registration;
 import mbn.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,14 +16,14 @@ import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
+import static mbn.util.ApplicationUtils.PATH;
+
 @RestController
 @RequestMapping(value = "/file")
 public class FileController {
 
 
     private FileService fileService;
-    private final static String PATH = "/Users/albica/Desktop/mbn/mbn-service/src/main/resources/static/documents/";
-
 
     @Autowired
     public FileController(FileService fileService) {
@@ -49,26 +47,16 @@ public class FileController {
                 .body(array);
     }
 
-    public static byte[] method(File file)
-            throws IOException
-    {
+    public static byte[] method(File file) throws IOException {
 
-        // Creating an object of FileInputStream to
-        // read from a file
         FileInputStream fl = new FileInputStream(file);
 
-        // Now creating byte array of same length as file
         byte[] arr = new byte[(int)file.length()];
 
-        // Reading file content to byte array
-        // using standard read() method
         fl.read(arr);
 
-        // lastly closing an instance of file input stream
-        // to avoid memory leakage
         fl.close();
 
-        // Returning above byte array
         return arr;
     }
 }

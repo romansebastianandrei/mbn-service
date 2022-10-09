@@ -16,15 +16,13 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
+import static mbn.util.ApplicationUtils.PATH;
 import static mbn.util.ApplicationUtils.isNotNullOrEmpty;
 
 @Service
 public class ClientService{
     private ClientRepository clientRepository;
     private FileRepository fileRepository;
-
-    private final static String PATH = "/Users/albica/Desktop/mbn/mbn-service/src/main/resources/static/documents/";
-
     @Autowired
     public ClientService(ClientRepository clientRepository, FileRepository fileRepository) {
         this.clientRepository = clientRepository;

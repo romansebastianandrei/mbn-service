@@ -4,57 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8008ad1-884f-4801-9258-4b6c8476bbdc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mbn/util/ApplicationUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/143693fa-6629-4504-8967-8427d74d7dd0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/1b0a32eb-168f-48fe-a4e2-a904ee7f222e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/1e26c778-4ca9-4d2f-b02d-50e1e85c819e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/206d40f2-aa25-42a9-98d0-d97b603a13ab.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/2622204c-6344-4473-b412-4075f0211de4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/3ed74c2f-aa00-4cdc-bc9c-2c4feb1deb3c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/457f0705-3f7c-41ce-9c6a-3f71ca5baa83.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/6e262e60-c771-4019-a283-4b4acac38534.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/7341ba5e-75fb-431d-bf66-22a0bcd59e7e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/89491350-bad2-4903-9895-191382d8934a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/933e570d-3c61-4e16-93e8-031828f30805.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/ad021694-2e4c-4cc0-a1e5-b1d5ffb3ea8a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/b5a0c68d-13d4-41ed-a996-e41f90488065.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/b650a996-3452-4721-b626-faa30a8b51f0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/bd5ef87b-02dd-40be-9413-30ede69992a9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/c074cefe-af79-44a7-9da1-7736976f58fd.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/d1865439-4453-45f7-8ad2-db97efdf45dc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/dda3e5ed-81cb-449b-8b21-67d0d60b836a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/df3c4edd-872b-40dc-84d1-7bbb09d5b87a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/f8b39805-1e73-4c52-a57d-74fb9e374e51.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/fa450f81-59b0-40de-b34e-354cbf5b190b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/fc137521-48da-4c2b-9416-b9c9d4582641.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/ff924bd3-c78b-4edf-9b14-998d4e680f9f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/2/48e90819-eb69-46d1-bd05-53d8a1fe446e.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/2/7e033fb8-961d-4453-9b62-35381ba958a9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/controller/DoctorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/dtos/ClientDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/dtos/FilterDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/model/Doctor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/model/FileRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/model/FileRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/model/Registration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Registration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/repository/DoctorRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/repository/RegistrationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/RegistrationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/service/DoctorService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/service/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/service/RegistrationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_2__doctors_table.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_3__registrations_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_3__registrations_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_4__addDoctors.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_5__files_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_5__files_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_6__registrations_files_junction.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_6__registrations_files_junction.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_7__update_file_table.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db/migration/V0_8__registrations_files_junction.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V0_8__clients_files_junction.sql" afterDir="false" />
-    </list>
+    <list default="true" id="f8008ad1-884f-4801-9258-4b6c8476bbdc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,7 +189,7 @@
       <workItem from="1664213280217" duration="8300000" />
       <workItem from="1664446156009" duration="1930000" />
       <workItem from="1664984901191" duration="2644000" />
-      <workItem from="1665148295019" duration="32634000" />
+      <workItem from="1665148295019" duration="32952000" />
     </task>
     <servers />
   </component>
