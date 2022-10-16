@@ -38,6 +38,8 @@ public class Client {
             inverseJoinColumns = @JoinColumn(name = "file_id"))
     private Set<FileRequest> fileSet = new HashSet<>();
 
+    @Column(name="gdpr_completed")
+    private boolean gdprCompleted;
 
     public Client() {}
 
@@ -111,5 +113,13 @@ public class Client {
 
     public void setFileSet(Set<FileRequest> fileSet) {
         this.fileSet = fileSet;
+    }
+
+    public boolean isGdprCompleted() {
+        return gdprCompleted;
+    }
+
+    public void setGdprCompleted(boolean gdprCompleted) {
+        this.gdprCompleted = gdprCompleted;
     }
 }

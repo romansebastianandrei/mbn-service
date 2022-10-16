@@ -5,5 +5,6 @@ CREATE TABLE IF NOT EXISTS clients (
     cnp TEXT,
     date_of_birth TIMESTAMP,
     address TEXT,
-    phone TEXT
+    phone TEXT,
+    gdpr_completed BOOLEAN
 );

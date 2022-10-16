@@ -4,6 +4,7 @@ import mbn.model.FileRequest;
 import mbn.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.*;
@@ -12,10 +13,12 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
 
+import static mbn.util.ApplicationUtils.GDPR_PATH;
 import static mbn.util.ApplicationUtils.PATH;
 
 @RestController
@@ -45,6 +48,24 @@ public class FileController {
                 .ok()
                 .contentType(org.springframework.http.MediaType.IMAGE_JPEG)
                 .body(array);
+    }
+
+    @GetMapping(value="/printing/pdf",produces= MediaType.APPLICATION_PDF_VALUE)
+    public  @ResponseBody byte[]  print() {
+
+        try {
+            FileInputStream fis= new FileInputStream(new File(GDPR_PATH));
+            byte[] targetArray = new byte[fis.available()];
+            fis.read(targetArray);
+            return targetArray;
+        } catch (FileNotFoundException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return null;
     }
 
     public static byte[] method(File file) throws IOException {

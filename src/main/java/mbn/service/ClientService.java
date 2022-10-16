@@ -1,6 +1,7 @@
 package mbn.service;
 
 import mbn.dtos.FilterDTO;
+import mbn.exceptions.CnpException;
 import mbn.model.Client;
 import mbn.model.FileRequest;
 import mbn.repository.ClientRepository;
@@ -29,7 +30,10 @@ public class ClientService{
         this.fileRepository = fileRepository;
     }
 
-    public Client createClient(Client client){
+    public Client createClient(Client client) throws CnpException {
+        if(clientRepository.findClientByCnp(client.getCnp()).isPresent()){
+            throw new CnpException("CNP-ul exista deja in baza de date");
+        }
         return clientRepository.save(client);
     }
 
@@ -85,6 +89,7 @@ public class ClientService{
         updatedClient.setAddress(client.getAddress());
         updatedClient.setLastName(client.getLastName());
         updatedClient.setFirstName(client.getFirstName());
+        updatedClient.setGdprCompleted(client.isGdprCompleted());
         return clientRepository.save(updatedClient);
     }
 

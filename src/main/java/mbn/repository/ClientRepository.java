@@ -15,6 +15,8 @@ import java.util.Optional;
 public interface ClientRepository extends JpaRepository<Client, Long>, JpaSpecificationExecutor<Client> {
 
     Optional<Client> findClientByCodPatient(Long codPatient);
+    Optional<Client> findClientByCnp(String cnp);
+
     List<Client> findAll(Specification<Client> spec);
 
 }
