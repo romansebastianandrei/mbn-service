@@ -26,7 +26,11 @@ spring:
       baseline-on-migrate: false
       validate-on-migrate: true
 
-ps-ui:
-  url: "http://localhost:3000/"
+mbn-ui:
+  url: ${MBN_UI_BASE_URL:#{"http://localhost:3000"}}
+
+mbn-images:
+  save-path: ${MBN_SAVE_IMAGE_PATH:#{"/Users/albica/Desktop/mbn/mbn-service/src/main/resources/static/documents/"}}
+  get-gdpr-path: ${MBN_GET_GDPR_PATH:#{"/Users/albica/Desktop/mbn/mbn-service/src/main/resources/static/documents/GDPR/GDPR.pdf"}}
 
 

@@ -1,8 +1,6 @@
 package mbn.repository;
 
 import mbn.model.Client;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
@@ -16,7 +14,6 @@ public interface ClientRepository extends JpaRepository<Client, Long>, JpaSpecif
 
     Optional<Client> findClientByCodPatient(Long codPatient);
     Optional<Client> findClientByCnp(String cnp);
-
     List<Client> findAll(Specification<Client> spec);
 
 }

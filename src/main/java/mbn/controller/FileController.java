@@ -1,49 +1,41 @@
 package mbn.controller;
 
-import mbn.model.FileRequest;
-import mbn.service.FileService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.List;
 import java.util.UUID;
-
-import static mbn.util.ApplicationUtils.GDPR_PATH;
-import static mbn.util.ApplicationUtils.PATH;
 
 @RestController
 @RequestMapping(value = "/file")
 public class FileController {
 
+    private final Logger logger = LoggerFactory.getLogger(FileController.class);
 
-    private FileService fileService;
+    private final String path;
+    private final String gdprPath;
 
     @Autowired
-    public FileController(FileService fileService) {
-        this.fileService = fileService;
-    }
-
-    @PostMapping("/client/{clientId}/registration/{registrationId}")
-    public ResponseEntity<List<FileRequest>> saveFiles(@RequestParam(value = "files",required = false) MultipartFile[] files,
-                                                               @PathVariable Long clientId, @PathVariable Long registrationId) {
-        return ResponseEntity.status(HttpStatus.CREATED).body(fileService.saveFileForRegistration(files, clientId, registrationId));
+    public FileController(@Value("${mbn-images.save-path}") String path, @Value("${mbn-images.get-gdpr-path}") String gdprPath) {
+        this.path = path;
+        this.gdprPath = gdprPath;
     }
 
     @GetMapping(value= "/image/{clientId}/{fileId}", produces = org.springframework.http.MediaType.IMAGE_JPEG_VALUE)
     private ResponseEntity<byte[]> getFile(@PathVariable Long clientId, @PathVariable UUID fileId, HttpServletResponse response) throws IOException {
-        File file = ResourceUtils.getFile(PATH+ clientId + "/"+fileId+".png");
+        File file = ResourceUtils.getFile(path+ clientId + "/"+fileId+".png");
         byte[] array = method(file);
-
+        logger.info("Request get file for client with ID: " + clientId);
         return ResponseEntity
                 .ok()
                 .contentType(org.springframework.http.MediaType.IMAGE_JPEG)
@@ -54,7 +46,7 @@ public class FileController {
     public  @ResponseBody byte[]  print() {
 
         try {
-            FileInputStream fis= new FileInputStream(new File(GDPR_PATH));
+            FileInputStream fis= new FileInputStream(new File(gdprPath));
             byte[] targetArray = new byte[fis.available()];
             fis.read(targetArray);
             return targetArray;

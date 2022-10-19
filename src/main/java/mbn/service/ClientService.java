@@ -7,6 +7,7 @@ import mbn.model.FileRequest;
 import mbn.repository.ClientRepository;
 import mbn.repository.FileRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -17,17 +18,19 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-import static mbn.util.ApplicationUtils.PATH;
 import static mbn.util.ApplicationUtils.isNotNullOrEmpty;
 
 @Service
 public class ClientService{
     private ClientRepository clientRepository;
     private FileRepository fileRepository;
+    private final String path;
+
     @Autowired
-    public ClientService(ClientRepository clientRepository, FileRepository fileRepository) {
+    public ClientService(@Value("${mbn-images.save-path}") String path, ClientRepository clientRepository, FileRepository fileRepository) {
         this.clientRepository = clientRepository;
         this.fileRepository = fileRepository;
+        this.path = path;
     }
 
     public Client createClient(Client client) throws CnpException {
@@ -35,10 +38,6 @@ public class ClientService{
             throw new CnpException("CNP-ul exista deja in baza de date");
         }
         return clientRepository.save(client);
-    }
-
-    public List<Client> getClients() {
-        return clientRepository.findAll();
     }
 
     public Client getClientByCodPatient(Long codPatient) {
@@ -49,7 +48,6 @@ public class ClientService{
             throw new RuntimeException("User not found");
         }
     }
-
 
     public List<Client> findClients(FilterDTO client) {
         List<Client> all = clientRepository.findAll(getSpecification(client));
@@ -103,8 +101,7 @@ public class ClientService{
         }
         Arrays.stream(files).forEach(file -> {
             try {
-                String directoryName = PATH.concat(String.valueOf(clientId));
-//                String fileName = file.getOriginalFilename();
+                String directoryName = path.concat(String.valueOf(clientId));
 
                 File directory = new File(directoryName);
                 if (! directory.exists()){
@@ -112,8 +109,8 @@ public class ClientService{
                 }
 
                 FileRequest fileRequest = new FileRequest();
-//                fileRequest.setPath(f.getPath());
                 fileRequest.setName(file.getOriginalFilename());
+                fileRequest.setPatientId(clientId);
                 FileRequest save = fileRepository.save(fileRequest);
 
                 File f = new File(directoryName + "/" + save.getFileId()+ ".png");

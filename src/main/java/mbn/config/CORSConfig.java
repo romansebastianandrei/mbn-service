@@ -11,17 +11,17 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 @EnableWebMvc
 public class CORSConfig implements WebMvcConfigurer {
 
-    private final String psUiBaseUrl;
+    private final String mbnUiBaseUrl;
 
     @Autowired
-    public CORSConfig(@Value("${ps-ui.url}") String psUiBaseUrl) {
-        this.psUiBaseUrl = psUiBaseUrl;
+    public CORSConfig(@Value("${mbn-ui.url}") String mbnUiBaseUrl) {
+        this.mbnUiBaseUrl = mbnUiBaseUrl;
     }
 
     @Override
         public void addCorsMappings(CorsRegistry registry) {
             registry.addMapping("/**")
-            .allowedOrigins("http://localhost:3000/", psUiBaseUrl)
+            .allowedOrigins("http://localhost:3000/", mbnUiBaseUrl)
             .allowedMethods("GET", "POST", "PATCH");
         }
     }

@@ -9,6 +9,7 @@ import mbn.repository.FileRepository;
 import mbn.repository.RegistrationRepository;
 import org.flywaydb.core.internal.util.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -22,7 +23,6 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.*;
 
-import static mbn.util.ApplicationUtils.PATH;
 import static mbn.util.ApplicationUtils.isNotNullOrEmpty;
 
 @Service
@@ -31,13 +31,15 @@ public class RegistrationService {
     private RegistrationRepository registrationRepository;
     private ClientRepository clientRepository;
     private FileRepository fileRepository;
+    private final String path;
 
     @Autowired
-    public RegistrationService(RegistrationRepository registrationRepository, ClientRepository clientRepository,
-                               FileRepository fileRepository) {
+    public RegistrationService(@Value("${mbn-images.save-path}") String path, RegistrationRepository registrationRepository,
+                               ClientRepository clientRepository, FileRepository fileRepository) {
         this.registrationRepository = registrationRepository;
         this.clientRepository = clientRepository;
         this.fileRepository = fileRepository;
+        this.path = path;
     }
 
     public Client getClient(Long codPatient) {
@@ -62,16 +64,17 @@ public class RegistrationService {
         Client client = getClient(clientId);
         Registration newRegistration = validateRegistration(registration);
         newRegistration.setClient(client);
+
         Date dateOfConsultation = registration.getDateOfConsultation();
         newRegistration.setDateOfConsultation(dateOfConsultation);
+
         newRegistration.setAgeAtConsultation(calculateAge(client.getDateOfBirth()));
 
         Set<FileRequest> newFiles = new HashSet<>();
         if (files != null) {
             Arrays.stream(files).forEach(file -> {
                 try {
-                    String directoryName = PATH.concat(String.valueOf(clientId));
-//                String fileName = file.getOriginalFilename();
+                    String directoryName = path.concat(String.valueOf(clientId));
 
                     File directory = new File(directoryName);
                     if (!directory.exists()) {
@@ -79,8 +82,9 @@ public class RegistrationService {
                     }
 
                     FileRequest fileRequest = new FileRequest();
-//                fileRequest.setPath(f.getPath());
                     fileRequest.setName(file.getOriginalFilename());
+                    fileRequest.setPatientId(clientId);
+
                     FileRequest save = fileRepository.save(fileRequest);
 
                     File f = new File(directoryName + "/" + save.getFileId() + ".png");
@@ -143,7 +147,7 @@ public class RegistrationService {
         if (byId.isPresent()) {
             return byId.get();
         } else {
-            throw new Exception("Registration doesnt exist");
+            throw new Exception("Registration doesn't exist");
         }
     }
 
@@ -163,7 +167,6 @@ public class RegistrationService {
             String dateInString = filterDTO.getFilterText();
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
             Date date = formatter.parse(dateInString);
-//            Date todayWithZeroTime = formatter.parse(formatter.format(date));
             searchDate = DateUtils.addDaysToDate(date, 1);
 
         }
