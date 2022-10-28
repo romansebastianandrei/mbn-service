@@ -1,0 +1,28 @@
+name: mbn-service BE pipeline
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  build-code:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin' # See 'Supported distributions' for available options
+        java-version: '11'
+        cache: 'gradle'
+    - run: ./gradlew build --no-daemon
+      name: build code
+    - name: build-docker
+      uses: aevea/action-kaniko@master
+      with:
+        image: romansebastianandrei/mbn-service
+        tag: 1.1
+        tag_with_latest: true
+        username: ${{ secrets.DH_USER }}
+        password: ${{ secrets.DH_TOKEN }}
+    

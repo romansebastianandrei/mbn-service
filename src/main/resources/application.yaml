@@ -1,5 +1,5 @@
 server:
-  port : 8090
+  port : 8080
 spring:
   servlet:
     multipart:
@@ -16,9 +16,9 @@ spring:
           time_zone: UTC
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: alina
-    password: alina
+    url: ${PSQL_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${PSQL_USERNAME:postgres}
+    password: ${PSQL_PASSWORD:postgres}
     driverClassName: org.postgresql.Driver
   flyway:
     datasource:
@@ -30,7 +30,7 @@ mbn-ui:
   url: ${MBN_UI_BASE_URL:#{"http://localhost:3000"}}
 
 mbn-images:
-  save-path: ${MBN_SAVE_IMAGE_PATH:#{"/Users/albica/Desktop/mbn/mbn-service/src/main/resources/static/documents/"}}
-  get-gdpr-path: ${MBN_GET_GDPR_PATH:#{"/Users/albica/Desktop/mbn/mbn-service/src/main/resources/static/documents/GDPR/GDPR.pdf"}}
+  save-path: ${MBN_SAVE_IMAGE_PATH:#{"./"}}
+  get-gdpr-path: ${MBN_GET_GDPR_PATH:#{"./src/main/resources/static/documents/GDPR/GDPR.pdf"}}
 
 
