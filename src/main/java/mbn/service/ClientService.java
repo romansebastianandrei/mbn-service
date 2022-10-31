@@ -18,6 +18,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
+import static mbn.util.ApplicationUtils.getExtensionByApacheCommonLib;
 import static mbn.util.ApplicationUtils.isNotNullOrEmpty;
 
 @Service
@@ -113,7 +114,7 @@ public class ClientService{
                 fileRequest.setPatientId(clientId);
                 FileRequest save = fileRepository.save(fileRequest);
 
-                File f = new File(directoryName + "/" + save.getFileId()+ ".png");
+                File f = new File(directoryName + "/" + save.getFileId()+ "." +getExtensionByApacheCommonLib(file.getOriginalFilename()));
                 file.transferTo(f);
 
                 fileRequest.setPath(f.getPath());
