@@ -5,20 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f8008ad1-884f-4801-9258-4b6c8476bbdc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/03d2cdf0-56b2-4df7-a05e-14e8ee429089.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/07ee3685-fcfa-448d-9762-ab9de5217fd5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/0ed249fc-8497-48e4-a40e-f81201b71bf2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/357184f2-8f2e-4337-a710-bbcac8513ff4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/378d038b-57ec-413e-aabf-474cd175f327.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/4142bb65-5890-4ab2-ab72-73a0dcc7a575.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/4895eabb-3dca-4429-9b4c-9bc21be33e74.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/5b837d7d-3317-4d9f-b499-71b0bf3b561e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/6c55adb5-be81-47e4-a9f5-34042133aa37.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/746d1ff0-f1c3-4aea-9f31-eddd543a3f29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/8cbb24ea-9785-4af1-8997-efaf2c51cc16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/931b1bc7-22a0-4d35-b0e9-b2e505b5cfdc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/97696b08-d835-4a4e-abfb-5761b1c014fe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/a5c82910-77c9-4b59-bbeb-27717b25af64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/bed4a261-9acd-4d7b-910a-86fa5efa4b90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/ccbddc84-2853-4fa9-b84b-ef44129f9fba.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/da0525da-7427-4596-8c7e-124ad93cf675.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/db7b839f-a678-4086-83e7-6a99e0973976.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/1/dd4e7e40-d5d6-47fb-957d-b5fe9060fd42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/5/16eaacdd-f422-47b5-848b-8061e4de374f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/5/18845a48-5d64-4594-b87c-3ce9e9722985.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/5/2b75e409-b843-4917-89e4-0c99cb818480.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/5/50c91ae9-d01f-492a-aa55-4835287684c8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/5/6c58419a-498b-49d9-a5a4-6aca4007745c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/5/b2791fcb-2187-4e02-a589-b864046e7b08.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/5/b5989971-4053-465c-8dd4-d331fed7ea80.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/5/d70f8b7f-d8e1-4d25-a90d-fb9d10af8524.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/5/dfc8a6e1-40a6-4a2f-9790-663de5c1f3ff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/documents/5/e443c530-ce25-45d3-870a-0336dfa89d5c.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mbn/config/CORSConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/config/CORSConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mbn/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/FileController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/repository/ClientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/ClientRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/repository/FileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/FileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/repository/RegistrationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/repository/RegistrationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/model/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/mbn/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/service/ClientService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/service/FileService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/service/RegistrationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/service/RegistrationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mbn/util/ApplicationUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mbn/util/ApplicationUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/documents/GDPR/GDPR.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/documents/GDPR/GDPR.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +86,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.6.4/92cf026e6556ae2db07f41f1e0eb4c4542bc34e/spring-data-commons-2.6.4-sources.jar!/org/springframework/data/repository/CrudRepository.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/build.gradle" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/mbn/MbnApplication.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/application.yaml" root0="FORCE_HIGHLIGHTING" />
@@ -215,6 +236,14 @@
       <workItem from="1665998095138" duration="645000" />
       <workItem from="1666112623935" duration="1377000" />
       <workItem from="1666198505365" duration="4497000" />
+      <workItem from="1667828509455" duration="2000" />
+      <workItem from="1672912382508" duration="2088000" />
+      <workItem from="1673356377186" duration="616000" />
+      <workItem from="1673785040775" duration="4239000" />
+      <workItem from="1673806788591" duration="4395000" />
+      <workItem from="1673859840006" duration="596000" />
+      <workItem from="1674221310206" duration="458000" />
+      <workItem from="1674236231143" duration="364000" />
     </task>
     <servers />
   </component>
@@ -239,9 +268,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/mbn/controller/FileController.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mbn/controller/RegistrationController.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="13" />
+          <line>35</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -4,10 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import javax.persistence.*;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Table(name="clients")
@@ -121,5 +118,18 @@ public class Client {
 
     public void setGdprCompleted(boolean gdprCompleted) {
         this.gdprCompleted = gdprCompleted;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Client client = (Client) o;
+        return codPatient == client.codPatient && gdprCompleted == client.gdprCompleted && Objects.equals(firstName, client.firstName) && Objects.equals(lastName, client.lastName) && Objects.equals(cnp, client.cnp) && Objects.equals(dateOfBirth, client.dateOfBirth) && Objects.equals(address, client.address) && Objects.equals(phone, client.phone) && Objects.equals(registrations, client.registrations) && Objects.equals(fileSet, client.fileSet);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(codPatient, firstName, lastName, cnp, dateOfBirth, address, phone, registrations, fileSet, gdprCompleted);
     }
 }

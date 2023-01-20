@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.ResourceUtils;
@@ -17,9 +18,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.Optional;
 import java.util.UUID;
 
+import static java.nio.file.Files.delete;
 import static mbn.util.ApplicationUtils.getExtensionByApacheCommonLib;
 
 @RestController
@@ -61,6 +64,20 @@ public class FileController {
         throw new RuntimeException("File does not exist");
     }
 
+    @DeleteMapping(value = "/image/{clientId}/{fileId}")
+    public ResponseEntity<String> deleteFile(@PathVariable Long clientId, @PathVariable UUID fileId, HttpServletResponse response) throws IOException {
+        Optional<FileRequest> byId = fileRepository.findById(fileId);
+        if(byId.isPresent()) {
+            fileRepository.delete(byId.get());
+            String path1 = byId.get().getPath();
+            File file = ResourceUtils.getFile(path1);
+            delete(file.toPath());
+            return ResponseEntity.status(HttpStatus.OK).body("File deleted");
+        }else{
+            throw new RuntimeException("File does not exist");
+        }
+    }
+
     @GetMapping(value= "/image/pdf/{clientId}/{fileId}", produces = MediaType.APPLICATION_PDF_VALUE)
     public  @ResponseBody byte[] getFilePdf(@PathVariable Long clientId, @PathVariable UUID fileId, HttpServletResponse response) throws IOException {
         Optional<FileRequest> byId = fileRepository.findById(fileId);
@@ -76,15 +93,7 @@ public class FileController {
                 byte[] targetArray = new byte[fis.available()];
                 fis.read(targetArray);
                 return targetArray;
-//                return ResponseEntity
-//                        .ok()
-//                        .contentType(org.springframework.http.MediaType.IMAGE_JPEG)
-//                        .body(targetArray);
             }
-//            return ResponseEntity
-//                    .ok()
-//                    .contentType(org.springframework.http.MediaType.IMAGE_JPEG)
-//                    .body(array);
             return array;
         }
         throw new RuntimeException("File does not exist");

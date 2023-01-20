@@ -49,7 +49,7 @@ public class ClientController {
     }
 
     @PatchMapping("/update/{clientId}")
-    public ResponseEntity<Client> updateClient(@PathVariable Long clientId, @RequestBody Client client) {
+    public ResponseEntity<Client> updateClient(@PathVariable Long clientId, @RequestBody Client client) throws CnpException {
         logger.info("Request update information for client with ID: " + clientId);
         return ResponseEntity.ok(clientService.updateClient(clientId, client));
     }
