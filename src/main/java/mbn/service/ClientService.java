@@ -82,8 +82,15 @@ public class ClientService{
         };
     }
 
-    public Client updateClient(Long clientId, Client client) {
+    public Client updateClient(Long clientId, Client client) throws CnpException {
         Client updatedClient = getClientByCodPatient(clientId);
+        Optional<Client> clientByCnp = clientRepository.findClientByCnp(client.getCnp());
+        if(clientByCnp.isPresent()){
+            if(updatedClient.getCodPatient() != clientByCnp.get().getCodPatient()){
+                throw new CnpException("CNP-ul exista deja in baza de date");
+            }
+        }
+        updatedClient.setCnp(client.getCnp());
         updatedClient.setPhone(client.getPhone());
         updatedClient.setAddress(client.getAddress());
         updatedClient.setLastName(client.getLastName());

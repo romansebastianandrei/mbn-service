@@ -2,6 +2,7 @@ package mbn.controller;
 
 
 import com.fasterxml.jackson.core.JsonParser;
+import com.fasterxml.jackson.core.json.JsonReadFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import mbn.dtos.FilterDTO;
 import mbn.model.Registration;
@@ -32,12 +33,17 @@ public class RegistrationController {
                                                            @PathVariable Long clientId) throws Exception {
         logger.info("Request create registration for client IO: "+clientId);
         ObjectMapper mapper = getJsonParserMapper();
+        registration = registration.replaceAll("(\r\n|\n)", "\\\\n");
         Registration createdRegistration = mapper.readValue(registration, Registration.class);
         return ResponseEntity.status(HttpStatus.CREATED).body(registrationService.createRegistration(createdRegistration, clientId, files));
     }
     private ObjectMapper getJsonParserMapper() {
         ObjectMapper mapper = new ObjectMapper();
         mapper.configure(JsonParser.Feature.ALLOW_UNQUOTED_FIELD_NAMES, true);
+        mapper.configure(
+                JsonReadFeature.ALLOW_UNESCAPED_CONTROL_CHARS.mappedFeature(),
+                true
+        );
         return mapper;
     }
 
